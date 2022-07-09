@@ -1,0 +1,25 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: solid black;
+}
+
+.board {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    border: 1px solid white;
+}
