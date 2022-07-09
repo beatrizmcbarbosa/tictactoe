@@ -6,7 +6,10 @@
 
 body {
     margin: 0;
-    background-color: solid black;
+}
+
+:root {
+    --cell-size: 100px;
 }
 
 .board {
@@ -15,11 +18,12 @@ body {
     display: grid;
     justify-content: center;
     align-content: center;
+    grid-template-columns: repeat(3, auto);
 }
 
 .cell {
-    width: 100px;
-    height: 100px;
+    width: var(--cell-size);
+    height: var(--cell-size);
     background-color: black;
     border: 1px solid white;
 }
